@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, TextInput, View, Button } from 'react-native';
+import { StyleSheet, Text, TextInput, View, Button, TouchableHighlight } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome'; // You can use any icon library like MaterialIcons, Ionicons, etc.
 
 
@@ -16,18 +16,25 @@ export default function Login(){
             <Text style={{opacity:0.3,marginBottom:60}}>Let's log in. Apply to jobs! </Text>
 
             <TextInput style={[styles.input]}  placeholder='Name'/>
-            <TextInput style={[styles.input]}  placeholder='Emailss'/>
+            <TextInput style={[styles.input]}  placeholder='Email'/>
             
             <Button title="Log in" />
-            <Text style={{marginTop:70,marginBottom:40 , opacity:0.3}} >
+            <Text style={{marginTop:70,marginBottom:80 , opacity:0.3}} >
                 _________ Or continue with_________
             </Text>
  
-            <View style={styles.icon}>
+            <View style={[styles.icon ,{marginLeft:90}]}>
             <Icon style={styles.icon} name="apple" size={30} color="black" />
             <Icon style={styles.icon} name="google" size={30} color="#DB4437" />
             <Icon style={styles.icon} name="facebook" size={30} color="blue" />
             </View>
+
+            <View style={{flexDirection: 'row',marginLeft:20}}>
+            <Text style={{opacity:0.3, marginRight:10}}>Haven't an account?</Text>
+            <TouchableHighlight >
+                <Text style={{color:"blue"}} >Register</Text>
+            </TouchableHighlight>
+                </View>
             
         </View>
     );
@@ -53,8 +60,8 @@ const styles = StyleSheet.create({
       },
     icon:{
         flexDirection: 'row',
-        marginBottom:10,
-        marginRight:40,
+        marginBottom:40,
+        marginRight:60,
         backgroundColor: 'rgba(255, 255, 255, 0.5)',
         justifyContent: 'center'
     }
