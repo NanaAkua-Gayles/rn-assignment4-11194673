@@ -1,0 +1,8 @@
+ID: 11194673
+
+Created a UIMockup
+
+The login.js is a component that displays a screen that allows a user to login. Which after the login button is pushed, the homescreen appears
+The Homescreen.js shows the profile of the user and the types of jobs the user may be interested in.
+The jobs.js shows vertical list that can be scrolled down of the jobs a user may go for.
+In PopularJobs, the user is given a vertical list of popular jobs and their salaries.
