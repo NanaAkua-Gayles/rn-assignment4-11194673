@@ -70,7 +70,7 @@ const Popularjobs = [
     {id: 9, image: require('./images/twitter.png'), postion: 'Comus Manager', company: 'Twitter', 
         salary: '$208,550/y', location: 'Kansas, US'},
       
-    {id: 10, image: require('./images/spotify.png'), postion: 'Electronic engineer', company: 'Spotify', 
+    {id: 10, image: require('./images/spotify.png'), postion: 'Engineer', company: 'Spotify', 
         salary: '$102,500/y', location: 'Connecticut, US'},
 ]
 
